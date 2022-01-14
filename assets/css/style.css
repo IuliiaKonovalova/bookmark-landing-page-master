@@ -115,8 +115,21 @@ header {
   display: none;
 }
 
+/* ----- Main ----- */
 .main {
-  z-index: 1;
+  width: 85%;
+  max-width: 2000px;
+  margin: 0 auto;
+  background-color: lemonchiffon;
+}
+
+/* ----- Footer ----- */
+.footer {
+  width: 85%;
+  max-width: 2000px;
+  margin: 0 auto;
+  background-color: var(--clr-primary--500);
+  color: white;
 }
 
 @media screen and (max-width: 1000px) {
@@ -139,7 +152,6 @@ header {
     justify-content: start;
     align-items: start;
     z-index: 999;
-    /* position: relative; */
   }
 
   .navbar.mobile .logo__container {
