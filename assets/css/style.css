@@ -56,6 +56,10 @@ header {
   width: 100%;
 }
 
+header.mobile {
+  height: 100vh;
+}
+
 /* --- Navbar --- */
 .navbar {
   width: 85%;
@@ -71,6 +75,15 @@ header {
 
 .navbar__components {
   display: flex;
+  flex-direction: row;
+  color: var(--clr-neutral--900);
+  align-items: center;
+}
+
+
+.navbar.mobile .navbar__components {
+  display: flex;
+  flex-direction: column;
   color: var(--clr-neutral--900);
   align-items: center;
 }
