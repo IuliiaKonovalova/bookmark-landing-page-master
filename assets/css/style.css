@@ -29,6 +29,21 @@ p {
   font-family: var(--ff-primary);
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 /* Body */
 body {
   font-family: var(--ff-primary);
