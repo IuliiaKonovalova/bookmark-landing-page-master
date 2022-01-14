@@ -53,6 +53,7 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
+  color: var(--clr-neutral--900);
 }
 
 header {
@@ -135,7 +136,19 @@ header {
 
 .hero__content {
   width: 50%;
-  background-color: whitesmoke;
+}
+
+.hero__title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  width: 70%;
+}
+
+.hero__description {
+  padding: 2em 0;
+  line-height: 2rem;
+  color: var(--clr-neutral--300);
+  width: 75%;
 }
 
 .hero__image {
