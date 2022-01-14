@@ -120,7 +120,7 @@ header {
   width: 85%;
   max-width: 2000px;
   margin: 0 auto;
-  background-color: lemonchiffon;
+
 }
 
 .hero {
@@ -130,6 +130,7 @@ header {
   justify-content: center;
   align-items: center;
   margin-top: 5em;
+  z-index: -1;
 }
 
 .hero__content {
@@ -139,10 +140,21 @@ header {
 
 .hero__image {
   width: 50%;
+  position: relative;
+
 }
 
-.hero__image::after {
+.box__right {
   content: '';
+  /* border-bottom: 35vh solid #ff1fb4ef; */
+  border-bottom-left-radius: 10em;
+  position: absolute;
+  left: 13rem;
+  right: -17.7%;
+  height: 75%;
+  bottom: 0;
+  background-color: var(--clr-primary--500);
+  z-index: -3;
 
 }
 
@@ -150,6 +162,7 @@ header {
   display: block;
   width: 100%;
   object-fit: contain;
+  /* z-index: 999; */
 }
 
 /* ----- Footer ----- */
