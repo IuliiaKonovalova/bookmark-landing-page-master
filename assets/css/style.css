@@ -52,7 +52,7 @@ body {
   font-size: var(--fs);
   display: flex;
   flex-direction: column;
-  /* position: relative; */
+  position: relative;
 }
 
 header {
@@ -73,16 +73,11 @@ header {
   background-color: wheat;
 }
 
-
-
-
 .navbar__header--mobile {
   color: white;
   width: 90%;
   display: none;
 }
-
-
 
 .navbar__components {
   display: flex;
@@ -120,6 +115,10 @@ header {
   display: none;
 }
 
+.main {
+  z-index: 1;
+}
+
 @media screen and (max-width: 1000px) {
   body {
     /* background-color: violet; */
@@ -140,7 +139,7 @@ header {
     justify-content: start;
     align-items: start;
     z-index: 999;
-    position: relative;
+    /* position: relative; */
   }
 
   .navbar.mobile .logo__container {
@@ -214,7 +213,6 @@ header {
   }
 
   .hamburger__container {
-
     display: block;
   }
 }
