@@ -34,3 +34,29 @@ const closeMenu = function (e) {
   e.preventDefault();
   navbar.classList.remove("mobile");
 }
+
+tabsContainer.addEventListener('click', function (e) {
+  changeTabContent(e);
+
+});
+
+const changeTabContent = function (e) {
+  const clicked = e.target.closest('.features__tab');
+  console.log(clicked);
+  if (!clicked) return;
+
+  // Remove Active Class
+
+  tabs.forEach((t) => t.classList.remove('features__tab--active'));
+  tabsContent.forEach((c) => c.classList.remove('feature__content--active'));
+
+  // Activate Tab
+
+  clicked.classList.add('features__tab--active');
+
+  // Activate Content
+
+  document
+    .querySelector(`.feature__content--${clicked.dataset.tab}`)
+    .classList.add('feature__content--active');
+}
