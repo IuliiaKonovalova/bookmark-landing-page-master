@@ -313,6 +313,7 @@ header {
 .image__container--features::after {
   content: '';
   border-bottom-right-radius: 10em;
+  border-top-right-radius: 12em;
   position: absolute;
   width: 47vw;
   left: -17.7%;
