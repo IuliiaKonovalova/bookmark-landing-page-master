@@ -221,21 +221,12 @@ header {
   object-fit: contain;
 }
 
-.hero__image--photo::after {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  bottom: -24px;
-  left: -24px;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(red, firebrick);
-}
 
 /* Features */
 .features,
-.download {
-  margin-top: 5em;
+.download,
+.questions {
+  margin-top: 7em;
 }
 
 .subsection {
@@ -356,14 +347,14 @@ header {
 .download__cards {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .download__card {
+  height: 28rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1.2em;
+  margin: 0 1.2em;
   padding: 1.3em;
   border-radius: 1em;
   box-shadow: 0px 7px 29px -19px rgba(0, 0, 0, 0.6);
@@ -379,18 +370,16 @@ header {
 }
 
 .download__card--2 {
-  margin-top: 7em;
+  margin-top: 4em;
 }
 
 .download__card--3 {
-  margin-top: 14em;
+  margin-top: 8em;
 }
 
 .download__card--3 .card__image--container {
   padding: 1.6em 0;
 }
-
-
 
 .card__image--photo {
   display: block;
@@ -416,7 +405,6 @@ header {
 
 .card__btn {
   margin-top: 1.5em;
-  /* width: 100%; */
   margin: 0 auto;
   display: flex;
   align-items: center;
