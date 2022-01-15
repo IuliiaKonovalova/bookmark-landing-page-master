@@ -71,7 +71,6 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: wheat;
 }
 
 .navbar__header--mobile {
@@ -95,6 +94,10 @@ header {
   text-transform: uppercase;
 }
 
+.navbar__item:hover {
+  color: var(--clr-primary--700);
+}
+
 .btn {
   padding: 0.7em 1.6em;
   border-radius: var(--br);
@@ -104,8 +107,12 @@ header {
   background-color: var(--clr-primary--700);
   color: white;
   padding: 0.5em 1.95em;
-  border: 1px solid var(--clr-primary--700);
+  border: 2px solid var(--clr-primary--700);
   border-radius: var(--br);
+}
+
+.btn__login:hover {
+  background-color: white;
 }
 
 .navbar__social {
