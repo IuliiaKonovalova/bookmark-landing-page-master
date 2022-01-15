@@ -232,7 +232,9 @@ header {
   background: linear-gradient(red, firebrick);
 }
 
-.features {
+/* Features */
+.features,
+.download {
   margin-top: 5em;
 }
 
@@ -261,10 +263,9 @@ header {
 }
 
 .features__tab-container {
-
   display: flex;
   justify-content: center;
-  padding: 1em 0 3em 0;
+  padding: 2em 0 5em 0;
 }
 
 .features__tab {
@@ -349,6 +350,74 @@ header {
   color: var(--clr-neutral--300);
   max-width: 70%;
 }
+
+/* Download */
+
+.download__cards {
+  background-color: palegoldenrod;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: palegreen;
+  margin: 1em;
+  padding: 1.3em;
+  border-radius: 1em;
+}
+
+.card__image--container {
+  padding: 2em 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.download__card--3 .card__image--container {
+  padding: 1.6em 0;
+}
+
+
+
+.card__image--photo {
+  display: block;
+  width: 50%;
+  object-fit: contain;
+}
+
+.card__title {
+  color: var(--clr-neutral--900);
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin-bottom: 0.5em;
+}
+
+.card__version {
+  color: var(--clr-neutral--300);
+  margin-bottom: 2em;
+}
+
+.breakpoint {
+  margin-bottom: 1.5em;
+}
+
+.card__btn {
+  margin-top: 1.5em;
+  /* width: 100%; */
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+
 
 /* ----- Footer ----- */
 .footer {
