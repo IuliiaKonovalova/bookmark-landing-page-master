@@ -1,7 +1,12 @@
+// Variables for mobile menu
 const navbar = document.getElementById("navbar");
 const dropdownMenu = document.getElementById("hamburger");
 const closeMenuBtn = document.getElementById("menu-close");
 const closeMenuLogo = document.getElementById("logo--close");
+// Variables for feature tabs and content
+const tabsContainer = document.querySelector('.features__tab-container');
+const tabs = document.querySelectorAll('.features__tab');
+const tabsContent = document.querySelectorAll('.feature__content');
 
 dropdownMenu.addEventListener("click", function (e) {
   showMenu(e);
