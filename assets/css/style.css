@@ -129,14 +129,16 @@ header {
   display: none;
 }
 
+
 /* ----- Main ----- */
 .main {
   width: 85%;
   max-width: 2000px;
   margin: 0 auto;
-
 }
 
+
+/* ----- Hero ----- */
 .hero {
   width: 100%;
   display: flex;
@@ -304,11 +306,25 @@ header {
   width: 100%;
   display: flex;
   justify-content: end;
+  position: relative;
+  padding-bottom: 5em;
+}
+
+.image__container--features::after {
+  content: '';
+  border-bottom-right-radius: 10em;
+  position: absolute;
+  width: 47vw;
+  left: -17.7%;
+  height: 80%;
+  bottom: 0;
+  background-color: var(--clr-primary--500);
+  z-index: -3;
 }
 
 .feature__image--photo {
   display: block;
-  width: 80%;
+  width: 95%;
   object-fit: contain;
 }
 
