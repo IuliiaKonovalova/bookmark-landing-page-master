@@ -3,7 +3,7 @@
 :root {
   --clr-primary--500: hsl(231, 69%, 60%);
   --clr-primary--700: hsl(0, 94%, 66%);
-  --clr-neutral--300: hsl(229, 8%, 60%);
+  --clr-neutral--300: #9194a1;
   --clr-neutral--500: #0f1b50e5;
   --clr-neutral--900: #252b46;
   --clr-accent--300: hsl(356, 100%, 66%);
@@ -216,7 +216,6 @@ header {
 
 .features {
   margin-top: 5em;
-  background-color: turquoise;
 }
 
 .subsection {
@@ -241,6 +240,32 @@ header {
   font-size: 1.2rem;
   line-height: 2rem;
   color: var(--clr-neutral--300);
+}
+
+.features__tab-container {
+
+  display: flex;
+  justify-content: center;
+  padding: 1em 0 3em 0;
+}
+
+.features__tab {
+  font-size: 1.3rem;
+  background-color: white;
+  color: var(--clr-neutral--300);
+  padding: 1em 3em;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #9194a15d;
+}
+
+.features__tab--active {
+  border-bottom: 4px solid var(--clr-primary--700);
+  color: var(--clr-neutral--900);
+}
+
+.feature__content {
+  background-color: whitesmoke;
 }
 
 /* ----- Footer ----- */
