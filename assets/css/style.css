@@ -503,6 +503,7 @@ header {
   letter-spacing: 0.3rem;
   padding-top: 5em;
   padding-bottom: 2.5em;
+  text-align: center;
 }
 
 .contact__incentive {
@@ -887,24 +888,16 @@ header {
   }
 
   .hero__title {
-    font-size: 3rem;
-    font-weight: 500;
-    width: 100%;
     text-align: center;
   }
 
   .hero__description {
-    padding: 1.5em 0;
-    font-size: 1.2rem;
-    line-height: 2rem;
-    color: var(--clr-neutral--300);
-    width: 90%;
     text-align: center;
   }
 
   .hero__image {
-    width: 100vw;
-    /* object-fit: contain; */
+    width: 100%;
+    object-fit: contain;
   }
 
   .image__container--hero {
@@ -912,10 +905,11 @@ header {
   }
 
   .hero__image--photo {
-    width: 100%;
+    width: inherit;
   }
 
   .image__container--hero::after {
+    right: -8.8%;
     width: 85vw;
   }
 
@@ -954,7 +948,6 @@ header {
     align-items: center;
   }
 
-
   .feature__header {
     text-align: center;
   }
@@ -964,5 +957,78 @@ header {
     text-align: center;
   }
 
+  .contact__statistics {
+    font-size: 0.7rem;
+    max-width: 90%;
+  }
+
+  .contact__incentive {
+    font-size: 2rem;
+    max-width: 90%;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+
+  .hero__btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main__btn--blue,
+  .main__btn--grey {
+    padding: 0.6em 1.2em;
+    font-size: 0.9rem;
+    margin: 1em 0 0 0;
+  }
+
+  .download__cards {
+    max-width: 90%;
+  }
+
+  .download__card {
+    height: unset;
+    margin: 1em 0;
+    padding: 1em;
+  }
+
+  .card__image--container {
+    padding: 1em 0;
+  }
+
+  .breakpoint {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+  }
+
+
+  .download__card--3 .card__image--container {
+    padding: 1em 0;
+  }
+
+  .card__title {
+    font-size: 1.2em;
+    margin-bottom: 0.3em;
+  }
+
+  .card__version {
+    color: var(--clr-neutral--300);
+    margin-bottom: 1em;
+  }
+
+  .breakpoint {
+    margin-bottom: 1em;
+  }
+
+  .card__btn {
+    margin-top: 1em;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
 
 }
