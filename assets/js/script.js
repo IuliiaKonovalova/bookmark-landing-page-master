@@ -11,6 +11,10 @@ const tabsContent = document.querySelectorAll(".feature__content");
 const questions = document.querySelectorAll(".question");
 const answerHolders = document.querySelectorAll(".question__holder");
 
+// Variables
+const submissionForm = document.getElementById("form");
+const emailInput = document.getElementById("email");
+
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -40,6 +44,15 @@ document.addEventListener("DOMContentLoaded", function () {
     question.addEventListener("click", showHideAnswer)
   });
 
+  submissionForm.addEventListener('submit', function (e) {
+    submission(e);
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') {
+      submission(e);
+    }
+  });
 })
 
 const showMenu = function (e) {
@@ -71,8 +84,35 @@ const changeTabContent = function (e) {
 
 const showHideAnswer = function (e) {
   const clicked = e.target.closest(".question__holder");
-  // e.target.classList.toggle("show")
   if (!clicked) return;
   clicked.classList.toggle("show")
   console.log("hi")
 }
+
+
+/**
+ * Check if the email is valid.
+ * If it is valid it displays a thank you message.
+ * If it is nat valid, displays an error message.
+ */
+const submission = function (e) {
+  e.preventDefault();
+  const email = emailInput.value;
+  if (!validateEmail(email)) {} else {
+    emailInput.value = "";
+  }
+}
+
+
+/**
+ * Function to validate email input
+ * Posted on Stack overflow:
+ * https://stackoverflow.com/questions/46155/whats-the-best-way-to-validate-an-email-address-in-javascript
+ */
+const validateEmail = (email) => {
+  return String(email)
+    .toLowerCase()
+    .match(
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    );
+};
