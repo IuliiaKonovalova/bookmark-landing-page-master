@@ -415,22 +415,25 @@ header {
   margin: 0 auto;
 }
 
+.question {
+  margin: 3em 0;
+}
+
 .question__holder {
   display: flex;
   justify-content: space-between;
   padding: 2em 0;
-}
-
-
-
-
-
-.question__holder {
   border-top: 1px solid #9194a15d;
 }
 
-.question__holder:last-child {
+.question:last-child {
   border-bottom: 1px solid #9194a15d;
+}
+
+.question__title {
+  font-weight: 500;
+  margin-left: 0.3em;
+  color: var(--clr-neutral--900);
 }
 
 .question__arrow {
@@ -440,6 +443,17 @@ header {
   background-position: center;
   background-size: contain;
   margin-right: 1.5em;
+}
+
+.question__answer {
+  margin: 0.3em 0.3em 2em 0.3em;
+  line-height: 2rem;
+  color: var(--clr-neutral--300);
+}
+
+.questions__btns {
+  display: flex;
+  justify-content: center;
 }
 
 
