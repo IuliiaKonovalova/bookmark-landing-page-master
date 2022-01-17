@@ -9,7 +9,7 @@
   --clr-accent--300: hsl(356, 100%, 66%);
   --fs: 18px;
   --ff-primary: 'Rubik', sans-serif;
-  --br: 0.3em;
+  --br: 0.35em;
 }
 
 /*------ Global Settings------*/
@@ -507,8 +507,48 @@ header {
 }
 
 .contact__email {
-  padding-top: 2em;
-  padding-bottom: 3em;
+  padding-top: 3.5em;
+  padding-bottom: 5em;
+  display: flex;
+  justify-content: space-around;
+}
+
+.input__email {
+  padding: 0.9em 1.5em;
+  border-radius: var(--br);
+  outline: none;
+  border: none;
+  width: 30rem;
+  margin-right: 1.2em;
+  font-size: 1.2rem;
+}
+
+.input__email:focus {
+  outline: none;
+}
+
+.input__email::placeholder {
+  font-weight: 300;
+  color: var(--clr-neutral--300);
+}
+
+.input__email:not(:placeholder-shown) {
+  color: var(--clr-neutral--900);
+  font-weight: 600;
+}
+
+
+.btn__submit {
+  padding: 0.9em 1.9em;
+  background-color: var(--clr-primary--700);
+  font-weight: 600;
+  color: white;
+  border: 3px solid var(--clr-primary--700);
+}
+
+.btn__submit:hover {
+  background-color: white;
+  color: var(--clr-primary--700);
 }
 
 .links {
