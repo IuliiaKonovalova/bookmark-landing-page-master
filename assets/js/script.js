@@ -10,8 +10,7 @@ const tabsContent = document.querySelectorAll(".feature__content");
 // Variables for questions
 const questions = document.querySelectorAll(".question");
 const answerHolders = document.querySelectorAll(".question__holder");
-
-// Variables
+// Variables for form
 const submissionForm = document.getElementById("form");
 const emailInput = document.getElementById("email");
 
@@ -98,8 +97,11 @@ const showHideAnswer = function (e) {
 const submission = function (e) {
   e.preventDefault();
   const email = emailInput.value;
-  if (!validateEmail(email)) {} else {
+  if (!validateEmail(email)) {
+    submissionForm.classList.add("error");
+  } else {
     emailInput.value = "";
+    submissionForm.classList.remove("error");
   }
 }
 

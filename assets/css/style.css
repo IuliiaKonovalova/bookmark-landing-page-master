@@ -506,11 +506,12 @@ header {
   text-align: center;
 }
 
-.contact__email {
+.form {
   padding-top: 3.5em;
   padding-bottom: 5em;
   display: flex;
   justify-content: space-around;
+  position: relative;
 }
 
 .input__email {
@@ -521,6 +522,11 @@ header {
   width: 30rem;
   margin-right: 1.2em;
   font-size: 1.2rem;
+}
+
+.form.error .input__email {
+  border: 3px solid var(--clr-primary--700);
+  border-bottom: 50px solid var(--clr-primary--700);
 }
 
 .input__email:focus {
@@ -537,9 +543,9 @@ header {
   font-weight: 600;
 }
 
-
 .btn__submit {
-  padding: 0.9em 1.9em;
+  padding: 1.1em 1.9em;
+  max-height: 4.3rem;
   background-color: var(--clr-primary--700);
   font-weight: 600;
   color: white;
@@ -549,6 +555,20 @@ header {
 .btn__submit:hover {
   background-color: white;
   color: var(--clr-primary--700);
+}
+
+.error__message {
+  position: absolute;
+  color: white;
+  top: 8.3rem;
+  left: 1.5rem;
+  font-style: italic;
+  font-weight: 500;
+  display: none;
+}
+
+.form.error .error__message {
+  display: block;
 }
 
 .links {
