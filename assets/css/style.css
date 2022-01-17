@@ -410,8 +410,37 @@ header {
   align-items: center;
 }
 
+.questions__container {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.question__holder {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 0;
+}
 
 
+
+
+
+.question__holder {
+  border-top: 1px solid #9194a15d;
+}
+
+.question__holder:last-child {
+  border-bottom: 1px solid #9194a15d;
+}
+
+.question__arrow {
+  width: 1.5rem;
+  background-image: url('../images/icon-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-right: 1.5em;
+}
 
 
 
