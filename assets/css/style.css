@@ -135,6 +135,7 @@ header {
   width: 85%;
   max-width: 2000px;
   margin: 0 auto;
+  margin-bottom: 7em;
 }
 
 
@@ -475,11 +476,68 @@ header {
 
 /* ----- Footer ----- */
 .footer {
-  width: 85%;
-  max-width: 2000px;
+  width: 100%;
   margin: 0 auto;
   background-color: var(--clr-primary--500);
   color: white;
+}
+
+
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.contact__statistics {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  padding-top: 5em;
+  padding-bottom: 2.5em;
+}
+
+.contact__incentive {
+  font-size: 3rem;
+  max-width: 40rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.contact__email {
+  padding-top: 2em;
+  padding-bottom: 3em;
+}
+
+.links {
+  background-color: var(--clr-neutral--900);
+  display: flex;
+
+}
+
+.links__container {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__components {
+  display: flex;
+}
+
+.links__page {
+  display: flex;
+}
+
+.links__social {
+  display: flex;
+}
+
+.social__components {
+  display: flex;
 }
 
 @media screen and (max-width: 1000px) {
