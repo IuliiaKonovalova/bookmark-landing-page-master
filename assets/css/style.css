@@ -635,8 +635,56 @@ header {
   color: #9da6d8;
 }
 
+@media screen and (max-width: 1394px) {
+
+  .hero__title {
+    font-size: 2.7rem;
+    width: 90%;
+  }
+
+  .hero__description {
+    padding: 1.5em 0;
+    width: 90%;
+  }
+}
 
 
+@media screen and (max-width: 1185px) {
+
+  .hero__title {
+    font-size: 2.5rem;
+    width: 90%;
+  }
+
+  .section__title {
+    font-size: 2.3rem;
+  }
+
+  .main__btn--blue,
+  .main__btn--grey {
+    padding: 0.6em 1.2em;
+    font-size: 1rem;
+  }
+
+  .feature__header {
+    font-size: 2rem;
+  }
+
+  .feature__description {
+    max-width: 100%;
+  }
+
+  .download__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2em;
+  }
+
+  .download__card--3 {
+    margin-top: 4em;
+  }
+}
 
 @media screen and (max-width: 1000px) {
   body {
