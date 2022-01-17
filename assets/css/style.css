@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 
 :root {
-  --clr-primary--500: hsl(231, 69%, 60%);
+  --clr-primary--500: #5368df;
   --clr-primary--700: #fa5757;
   --clr-neutral--300: #9194a1;
   --clr-neutral--500: #0f1b50e5;
@@ -571,10 +571,12 @@ header {
   display: block;
 }
 
+/* links */
+
 .links {
   background-color: var(--clr-neutral--900);
   display: flex;
-
+  padding: 2.5em 0;
 }
 
 .links__container {
@@ -582,10 +584,27 @@ header {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+
+}
+
+.logo__container {
+  padding-top: 0.2em;
 }
 
 .footer__components {
   display: flex;
+  flex-direction: row;
+  color: white;
+  align-items: center;
+}
+
+.footer__item {
+  margin-left: 4rem;
+  text-transform: uppercase;
+}
+
+.footer__item:hover {
+  color: var(--clr-primary--700);
 }
 
 .links__page {
@@ -599,6 +618,25 @@ header {
 .social__components {
   display: flex;
 }
+
+.social__components li {
+  margin-left: 2em;
+}
+
+.attribution {
+  background-color: var(--clr-neutral--900);
+  font-size: 1rem;
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 5em;
+}
+
+.attribution a {
+  color: #9da6d8;
+}
+
+
+
 
 @media screen and (max-width: 1000px) {
   body {
