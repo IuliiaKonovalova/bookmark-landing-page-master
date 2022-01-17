@@ -452,7 +452,7 @@ header {
   background-image: url('../images/icon-arrow-down.svg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 1.5rem/1.5rem;
   margin-right: 1.5em;
 }
 
@@ -872,7 +872,7 @@ header {
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
 
   /* ----- Hero ----- */
   .hero {
