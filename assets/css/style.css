@@ -1051,3 +1051,21 @@ header {
   }
 
 }
+
+@media screen and (min-width: 2283px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .image__container--hero::after {
+    width: 90%;
+    left: 35%;
+    height: 75%;
+  }
+
+  .image__container--features::after {
+    border-top-right-radius: 10em;
+    width: 110%;
+    left: -50%;
+  }
+}
