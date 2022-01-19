@@ -695,6 +695,10 @@ header {
 
 @media screen and (max-width: 1000px) {
 
+  .navbar {
+    height: 5rem;
+  }
+
   .navbar.mobile {
     all: unset;
     position: absolute;
@@ -846,7 +850,6 @@ header {
 
   .logo__container {
     padding-top: 1em;
-    margin-bottom: 2em;
   }
 
   .footer__components {
