@@ -854,6 +854,7 @@ header {
 
   .footer__components {
     flex-direction: column;
+    margin-top: 2em;
   }
 
   .footer__item {
