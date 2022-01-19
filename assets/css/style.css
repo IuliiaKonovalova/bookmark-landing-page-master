@@ -155,7 +155,7 @@ header {
 }
 
 .hero__title {
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-weight: 500;
   width: 75%;
 }
@@ -794,7 +794,6 @@ header {
     font-size: 1.7rem;
   }
 
-
   .main__btn--blue,
   .main__btn--grey {
     padding: 0.6em 1.2em;
@@ -883,6 +882,7 @@ header {
 
   .hero__title {
     text-align: center;
+    font-size: 1.8rem;
   }
 
   .hero__description {
@@ -921,6 +921,10 @@ header {
     flex-direction: column;
   }
 
+  .section__title {
+    font-size: 1.5rem;
+  }
+
   .feature__image {
     width: 100%;
   }
@@ -957,17 +961,21 @@ header {
   }
 
   .contact__incentive {
-    font-size: 2rem;
+    font-size: 1.7rem;
     max-width: 90%;
   }
 
   .form {
     width: 70%;
   }
-
 }
 
 @media screen and (max-width: 400px) {
+
+  .hero__title {
+    text-align: center;
+    font-size: 1.8rem;
+  }
 
   .hero__btns {
     display: flex;
