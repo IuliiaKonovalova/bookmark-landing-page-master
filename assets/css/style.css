@@ -312,10 +312,10 @@ header {
 
 .image__container--features::after {
   content: '';
-  border-bottom-right-radius: 10em;
+  border-bottom-right-radius: 12em;
   border-top-right-radius: 12em;
   position: absolute;
-  width: 47vw;
+  width: 45vw;
   left: -17.7%;
   height: 80%;
   bottom: 0;
@@ -1064,8 +1064,7 @@ header {
   }
 
   .image__container--features::after {
-    border-top-right-radius: 10em;
-    width: 110%;
+    width: 130%;
     left: -50%;
   }
 }
