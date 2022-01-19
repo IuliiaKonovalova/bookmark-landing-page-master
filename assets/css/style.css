@@ -58,7 +58,6 @@ body {
 
 header {
   width: 100%;
-
 }
 
 /* --- Navbar --- */
@@ -129,7 +128,6 @@ header {
   display: none;
 }
 
-
 /* ----- Main ----- */
 .main {
   width: 85%;
@@ -137,7 +135,6 @@ header {
   margin: 0 auto;
   margin-bottom: 7em;
 }
-
 
 /* ----- Hero ----- */
 .hero {
@@ -158,7 +155,7 @@ header {
 }
 
 .hero__title {
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: 500;
   width: 75%;
 }
@@ -223,7 +220,7 @@ header {
 }
 
 
-/* Features */
+/*----- Features -----*/
 .features,
 .download,
 .questions {
@@ -332,7 +329,6 @@ header {
   padding-left: 7%;
 }
 
-
 .feature__header {
   font-weight: 500;
   font-size: 2.5rem;
@@ -348,7 +344,7 @@ header {
   max-width: 70%;
 }
 
-/* Download */
+/*----- Download -----*/
 
 .download__cards {
   display: flex;
@@ -416,7 +412,7 @@ header {
   align-items: center;
 }
 
-/* Question section */
+/*----- Question section -----*/
 .questions__container {
   max-width: 40rem;
   margin: 3em auto;
@@ -428,7 +424,6 @@ header {
   justify-content: space-between;
   border-top: 1px solid #9194a15d;
 }
-
 
 .question__header {
   display: flex;
@@ -477,9 +472,6 @@ header {
   justify-content: center;
 }
 
-
-
-
 /* ----- Footer ----- */
 .footer {
   width: 100%;
@@ -488,13 +480,11 @@ header {
   color: white;
 }
 
-
 .contact__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .contact__statistics {
@@ -591,7 +581,6 @@ header {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-
 }
 
 .logo__container {
@@ -642,6 +631,7 @@ header {
   color: #9da6d8;
 }
 
+/*----- Media Query -----*/
 @media screen and (max-width: 1394px) {
 
   .hero__title {
