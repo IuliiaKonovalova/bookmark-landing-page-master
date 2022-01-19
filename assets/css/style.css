@@ -826,7 +826,7 @@ header {
 
   .form {
     flex-direction: column;
-    width: 80%;
+    width: 60%;
   }
 
   .input__email {
@@ -971,6 +971,10 @@ header {
     max-width: 90%;
   }
 
+  .form {
+    width: 70%;
+  }
+
 }
 
 @media screen and (max-width: 400px) {
@@ -1033,6 +1037,10 @@ header {
     margin: 0 auto;
     display: flex;
     align-items: center;
+  }
+
+  .form {
+    width: 85%;
   }
 
 }
