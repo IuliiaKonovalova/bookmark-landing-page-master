@@ -9,14 +9,15 @@ const tabs = document.querySelectorAll(".features__tab");
 const tabsContent = document.querySelectorAll(".feature__content");
 // Variables for questions
 const questions = document.querySelectorAll(".question");
-const answerHolders = document.querySelectorAll(".question__holder");
 // Variables for form
 const submissionForm = document.getElementById("form");
 const emailInput = document.getElementById("email");
 
-
+/**
+ * Main function
+ */
 document.addEventListener("DOMContentLoaded", function () {
-
+  // Control mobile menu
   dropdownMenu.addEventListener("click", function (e) {
     showMenu(e);
   });
@@ -33,14 +34,16 @@ document.addEventListener("DOMContentLoaded", function () {
     if (e.key === "Escape") {
       closeMenu(e);
     }
-  })
+  });
 
+  // Control Feature's section content
   tabsContainer.addEventListener("click", function (e) {
     changeTabContent(e);
   });
 
+  // Control Question/Answer functionality
   questions.forEach((question) => {
-    question.addEventListener("click", showHideAnswer)
+    question.addEventListener("click", showHideAnswer);
   });
 
   submissionForm.addEventListener('submit', function (e) {
@@ -52,18 +55,28 @@ document.addEventListener("DOMContentLoaded", function () {
       submission(e);
     }
   });
-})
+});
 
+
+/**
+ * Show mobile menu
+ */
 const showMenu = function (e) {
   e.preventDefault();
   navbar.classList.add("mobile");
-}
+};
 
+/**
+ * Hide mobile menu
+ */
 const closeMenu = function (e) {
   e.preventDefault();
   navbar.classList.remove("mobile");
-}
+};
 
+/**
+ * Switch content on tag click
+ */
 const changeTabContent = function (e) {
   const clicked = e.target.closest(".features__tab");
   if (!clicked) return;
@@ -79,14 +92,17 @@ const changeTabContent = function (e) {
   document
     .querySelector(`.feature__content--${clicked.dataset.tab}`)
     .classList.add("feature__content--active");
-}
+};
 
+
+/**
+ * Show / Hide answer for the questions
+ */
 const showHideAnswer = function (e) {
   const clicked = e.target.closest(".question__holder");
   if (!clicked) return;
-  clicked.classList.toggle("show")
-  console.log("hi")
-}
+  clicked.classList.toggle("show");
+};
 
 
 /**
@@ -103,7 +119,7 @@ const submission = function (e) {
     emailInput.value = "";
     submissionForm.classList.remove("error");
   }
-}
+};
 
 
 /**
