@@ -89,11 +89,12 @@ header {
   margin-right: 4rem;
 }
 
-.navbar__item {
+.navbar__item a {
   text-transform: uppercase;
+  color: var(--clr-neutral--900);
 }
 
-.navbar__item:hover {
+.navbar__item a:hover {
   color: var(--clr-primary--700);
 }
 
@@ -599,7 +600,11 @@ header {
   text-transform: uppercase;
 }
 
-.footer__item:hover {
+.footer__item a {
+  color: white;
+}
+
+.footer__item a:hover {
   color: var(--clr-primary--700);
 }
 
