@@ -445,6 +445,7 @@ header {
   margin-left: 0.3em;
   color: var(--clr-neutral--900);
   text-align: start;
+  max-width: 75%;
 }
 
 .question__arrow {
