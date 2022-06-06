@@ -1,3 +1,4 @@
+import 'https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js';
 // Variables for mobile menu
 const navbar = document.getElementById("navbar");
 const dropdownMenu = document.getElementById("hamburger");
@@ -12,11 +13,28 @@ const questions = document.querySelectorAll(".question");
 // Variables for form
 const submissionForm = document.getElementById("form");
 const emailInput = document.getElementById("email");
+// Scroll timeline variables
+const scrollTracker = document.getElementById("scroll-tracker");
+const scrollTrackingTimeline = new ScrollTimeline({
+  source: document.scrollingElement,
+  orientation: "block",
+  scrollOffsets: [CSS.percent(0), CSS.percent(100)],
+});
 
 /**
  * Main function
  */
 document.addEventListener("DOMContentLoaded", function () {
+
+  scrollTracker.animate({
+    transform: ['scaleX(0)', 'scaleX(1)'],
+  }, {
+    duration: 1,
+    timeline: scrollTrackingTimeline,
+  });
+
+
+
   // Control mobile menu
   dropdownMenu.addEventListener("click", function (e) {
     showMenu(e);
