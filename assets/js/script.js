@@ -20,11 +20,25 @@ const scrollTrackingTimeline = new ScrollTimeline({
   orientation: "block",
   scrollOffsets: [CSS.percent(0), CSS.percent(100)],
 });
+const scrollToTop = document.getElementById("scroll-to-top-button");
+const scrollToTopTimeline = new ScrollTimeline({
+  source: document.scrollingElement,
+  orientation: "block",
+  scrollOffsets: [CSS.percent(0), CSS.percent(10)],
+});
 
 /**
  * Main function
  */
 document.addEventListener("DOMContentLoaded", function () {
+
+  scrollToTop.animate({
+    transform: ['scale(0)', 'scale(1)'],
+    opacity: 1,
+  }, {
+    duration: 1,
+    timeline: scrollToTopTimeline,
+  })
 
   scrollTracker.animate({
     transform: ['scaleX(0)', 'scaleX(1)'],
