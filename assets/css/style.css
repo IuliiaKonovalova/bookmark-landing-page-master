@@ -641,12 +641,13 @@ header {
 }
 
 /* ----- Scroll tracker ----- */
-.scroll-tracker {
+.scroll__tracker {
   position: fixed;
   height: 0.5rem;
-  background-color: var(--clr-primary--500);
+  background-color: var(--clr-primary--700);
   inset: 0 0 auto;
-
+  z-index: 999;
+  transform-origin: left;
 }
 
 
