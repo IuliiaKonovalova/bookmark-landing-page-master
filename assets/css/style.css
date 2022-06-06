@@ -640,6 +640,16 @@ header {
   color: #9da6d8;
 }
 
+/* ----- Scroll tracker ----- */
+.scroll-tracker {
+  position: fixed;
+  height: 0.5rem;
+  background-color: var(--clr-primary--500);
+  inset: 0 0 auto;
+
+}
+
+
 /*----- Media Query -----*/
 @media screen and (max-width: 1394px) {
 
