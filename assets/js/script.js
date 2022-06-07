@@ -51,29 +51,30 @@ document.addEventListener("DOMContentLoaded", function () {
   cards.forEach((card) => {
     const imagesOffsetTop = card.offsetTop;
     const imagesHeight = card.offsetHeight;
-    console.log(imagesOffsetTop, imagesHeight);
+    console.log(imagesOffsetTop);
+    console.log(imagesHeight);
     card.animate({
-      transform: ["perspective(1800px) rotateX(45deg)", "perspective(1800px) rotate(0)"],
+      transform: ["perspective(1000px) rotateX(50deg)", "perspective(1000px) rotate(0)"],
       opacity: ["0.8", "1"],
     }, {
       duration: 1,
       easing: "linear",
       timeline: new ScrollTimeline({
-        scrollOffsets: [{
-            target: card,
-            edge: "end",
-            threshold: "0.2"
-          },
-          {
-            target: card,
-            edge: "start",
-            threshold: "1"
-          },
-        ]
-        // scrollOffsets: [
-        //   CSS.px(imagesOffsetTop + imagesHeight - window.innerHeight),
-        //   CSS.px(imagesOffsetTop),
-        // ],
+        // scrollOffsets: [{
+        //     target: card,
+        //     edge: "end",
+        //     threshold: "0.2"
+        //   },
+        //   {
+        //     target: card,
+        //     edge: "start",
+        //     threshold: "1"
+        //   },
+        // ]
+        scrollOffsets: [
+          CSS.px(imagesOffsetTop + imagesHeight - window.innerHeight + 800),
+          CSS.px(imagesOffsetTop + 1200),
+        ],
       })
     });
   });
