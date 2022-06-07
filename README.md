@@ -98,3 +98,10 @@ We love receiving feedback! We're always looking to improve our challenges and o
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
 **Have fun building!** 🚀
+
+## Credits
+
+1. [Frontend Mentor](https://www.frontendmentor.io/)
+1. [Scroll-timeline](https://github.com/flackr/scroll-timeline)
+1. [Font Awesome](https://fontawesome.com/)
+1. [Google Fonts](https://fonts.google.com/)

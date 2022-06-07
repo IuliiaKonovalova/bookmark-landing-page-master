@@ -26,12 +26,13 @@ const scrollToTopTimeline = new ScrollTimeline({
   orientation: "block",
   scrollOffsets: [CSS.percent(0), CSS.percent(10)],
 });
+const cards = document.querySelectorAll(".feature__image--photo");
 
 /**
  * Main function
  */
 document.addEventListener("DOMContentLoaded", function () {
-
+  // Scroll to top timeline
   scrollToTop.animate({
     transform: ['scale(0)', 'scale(1)'],
     opacity: 1,
@@ -39,14 +40,36 @@ document.addEventListener("DOMContentLoaded", function () {
     duration: 1,
     timeline: scrollToTopTimeline,
   })
-
+  // Scroll page timeline
   scrollTracker.animate({
     transform: ['scaleX(0)', 'scaleX(1)'],
   }, {
     duration: 1,
     timeline: scrollTrackingTimeline,
   });
-
+  // Scroll feature images timeline
+  cards.forEach((card) => {
+    const cardAnimationTimeline = new ScrollTimeline({
+      scrollOffsets: [{
+          target: card,
+          edge: "end",
+          threshold: "0.2"
+        },
+        {
+          target: card,
+          edge: "start",
+          threshold: "1"
+        },
+      ]
+    });
+    card.animate({
+      transform: ["perspective(1800px) rotateX(45deg)", "perspective(1800px) rotate(0)"],
+      opacity: ["0.8", "1"],
+    }, {
+      duration: 1,
+      timeline: cardAnimationTimeline,
+    });
+  });
 
 
   // Control mobile menu
