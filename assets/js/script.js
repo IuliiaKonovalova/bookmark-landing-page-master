@@ -49,28 +49,34 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   // Scroll feature images timeline
   cards.forEach((card) => {
-    const cardAnimationTimeline = new ScrollTimeline({
-      scrollOffsets: [{
-          target: card,
-          edge: "end",
-          threshold: "0.2"
-        },
-        {
-          target: card,
-          edge: "start",
-          threshold: "1"
-        },
-      ]
-    });
+    const imagesOffsetTop = card.offsetTop;
+    const imagesHeight = card.offsetHeight;
+    console.log(imagesOffsetTop, imagesHeight);
     card.animate({
       transform: ["perspective(1800px) rotateX(45deg)", "perspective(1800px) rotate(0)"],
       opacity: ["0.8", "1"],
     }, {
       duration: 1,
-      timeline: cardAnimationTimeline,
+      easing: "linear",
+      timeline: new ScrollTimeline({
+        scrollOffsets: [{
+            target: card,
+            edge: "end",
+            threshold: "0.2"
+          },
+          {
+            target: card,
+            edge: "start",
+            threshold: "1"
+          },
+        ]
+        // scrollOffsets: [
+        //   CSS.px(imagesOffsetTop + imagesHeight - window.innerHeight),
+        //   CSS.px(imagesOffsetTop),
+        // ],
+      })
     });
   });
-
 
   // Control mobile menu
   dropdownMenu.addEventListener("click", function (e) {
